@@ -8,7 +8,7 @@ const swaggerDocumentation = {
 
     servers: [
         {
-            url: "http://localhost:5000",
+            url: "http://192.168.1.82:5000",
             description: "Local dev",
         },
         {
@@ -24,9 +24,9 @@ const swaggerDocumentation = {
     ],
 
     paths: {
-        "/api/": {
+        "/api/company": {
             get: {
-                tags: ["Company"],
+                tags: ["company"],
                 description: "List all of Companies",
                 responses: {
                     200: {
